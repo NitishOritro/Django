@@ -5,7 +5,7 @@ from django.http import HttpResponse
 
 
 def projectsUrlFunc(request):
-    return render(request, 'projects.html')
+    return render(request, 'projects/projects.html')
 
 
 
@@ -13,7 +13,7 @@ def projectsUrlFunc(request):
 
 def singleProjectPage(request, id):
     #return HttpResponse("Here are our Single project products url page: Id is: "+str(id))
-    return render(request, 'single-project.html')
+    return render(request, 'projects/single-project.html')
 
 #URL Based views
 
