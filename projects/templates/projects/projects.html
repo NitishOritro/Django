@@ -2,7 +2,22 @@
 
 {% block content %}
 
+
+
 <h1> Projects Template </h1>
+
+{{ message }}
+
 <P>Projects Page Shown </p>
+
+
+    {% if number > 10 %}
+    <P>Number is greater than 10</p>
+    {% elif  number == 10 %}
+    <P>Number is exactly 10</p>    
+    {% else %}
+    <P>Number is less than 10</p>
+    {% endif %}    
+    
 
 {% endblock content %}

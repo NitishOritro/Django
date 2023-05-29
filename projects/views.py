@@ -4,9 +4,19 @@ from django.http import HttpResponse
 # Create your views here.
 
 
-def projectsUrlFunc(request):
-    return render(request, 'projects/projects.html')
 
+
+
+
+def projectsUrlFunc(request):
+    msg = "Hello, you are the project page"
+    
+    number = 10
+    
+    context = {'message': msg, 'number': number}
+    
+    #return render(request, 'projects/projects.html', {'message': msg})
+    return render(request, 'projects/projects.html', context)
 
 
 #Passing Dynamic Data
