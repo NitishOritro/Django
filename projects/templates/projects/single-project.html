@@ -2,7 +2,15 @@
 
 {% block content %}
 
-<h1> Single Projects Template </h1>
-<p> Here are our Single project products url page: Id is: "+str(id)) </P>
+<h1>Title {{ projectPerPage.title }} </h1>
+    <p>Description: {{ projectPerPage.description }} </P>
+    <p>Price: {{ projectPerPage.price }} </P>
+    <p>Discount Percentage: {{ projectPerPage.discountPercentage }} </P>
+    <p>Rating: {{ projectPerPage.rating }} </P>
+    <p>Stock: {{ projectPerPage.stock }} </P>
+    <p>Brand: {{ projectPerPage.brand }} </P>
+    <p>Category: {{ projectPerPage.category }} </P> 
+        
+
 
 {% endblock content %}

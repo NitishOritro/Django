@@ -17,7 +17,30 @@
     <P>Number is exactly 10</p>    
     {% else %}
     <P>Number is less than 10</p>
-    {% endif %}    
+    {% endif %}  
     
+    
+    <h1>  All Project List Below:  </h1>
+    
+    <ul>
+
+        {% for index in allProjectLists %}
+            <li>ID: {{index.id}} </li>
+            <li>Title: {{index.title}} </li>
+            <li>Description: {{index.description}} </li>
+            <li>ID: {{index.price}} </li>
+            <li>Discount Percentage: {{index.discountPercentage}} </li>
+            <li>Rating: {{index.rating}} </li>
+            <li>Stock: {{index.stock}} $ </li>
+            <li>Brand: {{index.brand}} </li>
+            <li>Category: {{index.category}} </li>
+            <li>Images: {{index.images}} </li>
+            
+            
+    </br>
+    </br>
+        {% endfor %}
+
+    </ul>
 
 {% endblock content %}
