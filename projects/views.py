@@ -134,8 +134,15 @@ def singleProjectPage(request, id):
     projectObject = None
     
     for index in projectList:
-        if index['id'] == id:
-            projectObject = index
+      #print(type(index['id']))
+      #print(index['id'])
+      #print(type(id))
+      #print(id)
+      converted_num = str(id)
+      result = str(index['id'])
+      
+      if result == converted_num:
+          projectObject = index
         
     
     print(projectObject)

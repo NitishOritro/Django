@@ -26,7 +26,7 @@
 
         {% for index in allProjectLists %}
             <li>ID: {{index.id}} </li>
-            <li>Title: {{index.title}} </li>
+            <li>Title: <a href="{% url 'singleProjectsPageName' index.id %}"> {{index.title}} </a> </li>
             <li>Description: {{index.description}} </li>
             <li>ID: {{index.price}} </li>
             <li>Discount Percentage: {{index.discountPercentage}} </li>
